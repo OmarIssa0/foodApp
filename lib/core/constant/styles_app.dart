@@ -7,13 +7,13 @@ abstract class Styles {
     fontSize: 36.sp,
     fontWeight: FontWeight.w600,
     color: AppColor.kDark,
-    height: 45.h
+    // height: 45.h
   );
   static TextStyle textStyle30 = TextStyle(
     fontSize: 30.sp,
     fontWeight: FontWeight.w500,
     color: AppColor.kDark,
-    height: 40.h
+    // height: 40.h
   );
   static TextStyle textStyle24 = TextStyle(
     fontSize: 24.sp,
@@ -31,13 +31,13 @@ abstract class Styles {
     fontSize: 16.sp,
     fontWeight: FontWeight.w500,
     color: AppColor.kDark,
-    height: 22.h
+    // height: 22.h
   );
   static TextStyle textStyle15 = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeight.w400,
     color: AppColor.kDark,
-    height: 21.h
+    // height: 21.h
   );
   static TextStyle textStyle12 = TextStyle(
     fontSize: 12.sp,

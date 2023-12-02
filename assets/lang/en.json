@@ -1,5 +1,10 @@
 {
-    "hello_msg": "Hello there !",
-    "appBar_name": "Flutter Bloc",
-    "textTheme": "Theme Data"
+    "WelcomeToApp": "Welcome to",
+    "WelcomeToAppDescription": "Your favourite foods delivered\nfast at your door.",
+    "signInWith": "sign in with",
+    "SignInWithGoogle": "Sign In with Google",
+    "StartWithEmailOrPhone": "Start with email or phone",
+    "AlreadyHaveAnAccount?": "Already have an account? ",
+    "SignIn": "Sign In",
+    "Skip": "Skip"
 }

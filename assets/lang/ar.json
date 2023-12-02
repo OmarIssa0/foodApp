@@ -1,5 +1,10 @@
 {
-    "hello_msg": "مرحبا بالعالم !",
-    "appBar_name": "رفرفة الصندق",
-    "textTheme": "اخرى مظهر اخر"
+    "WelcomeToApp": "مرحبا بك في",
+    "WelcomeToAppDescription": "أطعمتك المفضلة التي يتم توصيلها بسرعة إلى باب منزلك.",
+    "signInWith": "تسجيل الدخول",
+    "SignInWithGoogle": "تسجيل الدخول باستخدام حساب Google",
+    "StartWithEmailOrPhone": "ابدأ بالبريد الإلكتروني",
+    "AlreadyHaveAnAccount?": "هل لديك حساب بالفعل؟",
+    "SignIn": "تسجيل الدخول",
+    "Skip": "تخطي"
 }
