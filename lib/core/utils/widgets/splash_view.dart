@@ -7,6 +7,7 @@ import 'package:food_app/core/constant/image_app.dart';
 import '../../../features/welcome/presentation/view/welcome_view.dart';
 
 class SplashView extends StatelessWidget {
+  static String id = '/SplashView';
   const SplashView({
     super.key,
   });

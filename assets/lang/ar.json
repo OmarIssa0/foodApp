@@ -1,4 +1,5 @@
 {
+    "the language": "اللغة",
     "WelcomeToApp": "مرحبا بك في",
     "WelcomeToAppDescription": "أطعمتك المفضلة التي يتم توصيلها بسرعة إلى باب منزلك.",
     "signInWith": "تسجيل الدخول",
@@ -6,5 +7,17 @@
     "StartWithEmailOrPhone": "ابدأ بالبريد الإلكتروني",
     "AlreadyHaveAnAccount?": "هل لديك حساب بالفعل؟",
     "SignIn": "تسجيل الدخول",
-    "Skip": "تخطي"
+    "Skip": "تخطي",
+    "SignUp": "انشاء حساب",
+    "FullName": "الأسم",
+    "E-mail": "البريد الإلكتروني",
+    "E-mailTextFiled": "البريد الإلكتروني",
+    "Password": "كلمة السر",
+    "Display name cannot be empty": "لا يمكن أن يكون اسم العرض فارغًا",
+    "Display name must be between 3 and 20 characters": "يجب أن يتراوح اسم العرض بين 3 و20 حرفًا",
+    "Please enter an email": "الرجاء إدخال بريد إلكتروني",
+    "Please enter a valid email": "يرجى إدخال البريد الإلكتروني الصحيح",
+    "Please enter a password": "الرجاء إدخال كلمة المرور",
+    "Password must be at least 6 characters long": "الرقم السري يجب الا يقل عن 6 احرف على الاقل",
+    "Login": "تسجيل الدخول"
 }

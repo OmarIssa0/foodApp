@@ -1,10 +1,23 @@
 {
+    "the language" : "language",
     "WelcomeToApp": "Welcome to",
     "WelcomeToAppDescription": "Your favourite foods delivered\nfast at your door.",
     "signInWith": "sign in with",
     "SignInWithGoogle": "Sign In with Google",
     "StartWithEmailOrPhone": "Start with email or phone",
-    "AlreadyHaveAnAccount?": "Already have an account? ",
+    "AlreadyHaveAnAccount?": "Already have an account?",
     "SignIn": "Sign In",
-    "Skip": "Skip"
+    "Skip": "Skip",
+    "SignUp": "Sign Up",
+    "FullName": "Full name",
+    "E-mail": "E-mail",
+    "E-mailTextFiled": "Your email",
+    "Password": "Password",
+    "Display name cannot be empty": "Display name cannot be empty",
+    "Display name must be between 3 and 20 characters": "Display name must be between 3 and 20 characters",
+    "Please enter an email": "Please enter an email",
+    "Please enter a valid email": "Please enter a valid email",
+    "Please enter a password": "Please enter a password",
+    "Password must be at least 6 characters long": "Password must be at least 6 characters long"
+    ,"Login":"Login"
 }

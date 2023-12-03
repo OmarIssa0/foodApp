@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app/core/locale/app_localization.dart';
 import '../../locale/cubit/locale_cubit.dart';
 
 class DropdownButtonLocal extends StatelessWidget {
@@ -13,10 +14,11 @@ class DropdownButtonLocal extends StatelessWidget {
       builder: (context, state) {
         if (state is ChangeLocaleState) {
           return DropdownButton<String>(
-            dropdownColor: Colors.amber,
-            focusColor: Colors.red,
+            // dropdownColor: Colors.amber,
+            // focusColor: Colors.red,
             borderRadius: BorderRadius.circular(12),
-            value: state.locale.languageCode,
+            // value: state.locale.languageCode,
+            hint: Text("the language".tr(context)),
             icon: const Icon(Icons.keyboard_arrow_down),
             items: ["ar", 'en'].map((String Item) {
               return DropdownMenuItem<String>(

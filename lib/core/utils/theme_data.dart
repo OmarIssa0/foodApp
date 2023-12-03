@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../constant/color_app.dart';
 
 class Styles {
   static ThemeData themeData({
@@ -14,33 +17,39 @@ class Styles {
       //   foregroundColor: Colors.white,
       //   backgroundColor: Colors.white,
       // ),
-      // inputDecorationTheme: InputDecorationTheme(
-      //   filled: true,
-      //   fillColor: Colors.grey.shade200,
-      //   contentPadding: const EdgeInsets.all(10),
-      //   enabledBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(color: Colors.grey.shade300),
-      //     borderRadius: BorderRadius.circular(8),
-      //   ),
-      //   focusedBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(color: Colors.grey.shade300),
-      //     borderRadius: BorderRadius.circular(8),
-      //   ),
-      //   errorBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(
-      //       width: 1,
-      //       color: Theme.of(context).colorScheme.error,
-      //     ),
-      //     borderRadius: BorderRadius.circular(8),
-      //   ),
-      //   focusedErrorBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(
-      //       width: 1,
-      //       color: Theme.of(context).colorScheme.error,
-      //     ),
-      //     borderRadius: BorderRadius.circular(8),
-      //   ),
-      // ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: Colors.white,
+        contentPadding: EdgeInsets.all(10.r),
+        hintStyle: TextStyle(
+            fontSize: 14.sp,
+            color: const Color(0xFFC4C4C4),
+            fontWeight: FontWeight.w400,
+            height: 0),
+        enabledBorder: OutlineInputBorder(
+          borderSide: const BorderSide(
+            color: Color(0xffEEEEEE),
+          ),
+          borderRadius: BorderRadius.circular(10.r),
+        ),
+        focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10.r),
+            borderSide: const BorderSide(color: AppColor.kOrange)),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            width: 1,
+            color: Theme.of(context).colorScheme.error,
+          ),
+          borderRadius: BorderRadius.circular(10.r),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            width: 1,
+            color: Theme.of(context).colorScheme.error,
+          ),
+          borderRadius: BorderRadius.circular(10.r),
+        ),
+      ),
     );
   }
 }

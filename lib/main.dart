@@ -6,6 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/core/locale/cubit/locale_cubit.dart';
 import 'package:food_app/core/utils/theme_data.dart';
 import 'package:food_app/core/utils/widgets/splash_view.dart';
+import 'package:food_app/features/auth/presentation/view/signup_view.dart';
+import 'package:food_app/features/welcome/presentation/view/welcome_view.dart';
 
 import 'core/locale/app_localization.dart';
 // import 'package:flutter_l';
@@ -52,7 +54,12 @@ class MyApp extends StatelessWidget {
                             ? 'DMSans'
                             : 'Tajawal'),
                     debugShowCheckedModeBanner: false,
-                    home: const SplashView(),
+                    initialRoute: SplashView.id,
+                    routes: {
+                      SplashView.id: (context) => const SplashView(),
+                      WelcomeView.id: (context) => const WelcomeView(),
+                      SignUpView.id: (context) => const SignUpView(),
+                    },
                   ),
                 );
               },
