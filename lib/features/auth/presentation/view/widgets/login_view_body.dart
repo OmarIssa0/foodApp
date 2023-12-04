@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:food_app/core/constant/color_app.dart';
 import 'package:food_app/core/constant/styles_app.dart';
 import 'package:food_app/core/locale/app_localization.dart';
-import 'package:food_app/features/auth/presentation/view/widgets/text_filed_signup.dart';
-import 'package:food_app/features/welcome/presentation/view/widgets/alerady_have_account.dart';
-import 'package:food_app/features/welcome/presentation/view/widgets/google_button.dart';
+import 'package:food_app/features/auth/presentation/view/signup_view.dart';
+import 'package:food_app/features/auth/presentation/view/widgets/custom_icon_button_arrow.dart';
+import 'package:food_app/features/auth/presentation/view/widgets/text_filed_login.dart';
 
+import '../../../../../core/constant/color_app.dart';
+import '../../../../welcome/presentation/view/widgets/alerady_have_account.dart';
+import '../../../../welcome/presentation/view/widgets/google_button.dart';
 import '../../../../welcome/presentation/view/widgets/signIn_with_widgets.dart';
-import '../login_view.dart';
 
-class SignUpViewBody extends StatelessWidget {
-  const SignUpViewBody({super.key});
+class LoginViewBody extends StatelessWidget {
+  const LoginViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,23 +23,28 @@ class SignUpViewBody extends StatelessWidget {
           image: AssetImage("assets/images/Sign Up Background.png"),
         ),
       ),
-      child: Padding(
-        padding: EdgeInsetsDirectional.symmetric(horizontal: 26.r),
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsetsDirectional.symmetric(horizontal: 26.r),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 60.h),
-              Text("SignUp".tr(context), style: Styles.textStyle36),
-              SizedBox(height: 30.h),
-              const TextFromFiledSignUp(),
+              SizedBox(height: 37.h),
+              const CustomIconButtonBack(),
+              SizedBox(height: 105.h),
+              Text(
+                "Login".tr(context),
+                style: Styles.textStyle36,
+              ),
+              SizedBox(height: 31.h),
+              const TextFromFiledLogin(),
               SizedBox(height: 30.h),
               AlreadyHavAnAccount(
                 function: () {
-                  Navigator.of(context).pushNamed(LoginView.id);
+                  Navigator.of(context).pushNamed(SignUpView.id);
                 },
                 name: "AlreadyHaveAnAccount?".tr(context),
-                nameButton: "Login".tr(context),
+                nameButton: "SignUp".tr(context),
                 colorName: const Color(0xFF5B5B5E),
                 colorNameButton: AppColor.kOrange,
               ),

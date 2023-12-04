@@ -9,11 +9,13 @@ class AlreadyHavAnAccount extends StatelessWidget {
     required this.nameButton,
     required this.colorName,
     required this.colorNameButton,
+    required this.function,
   });
 
   final String name, nameButton;
   final Color colorName;
   final Color colorNameButton;
+  final Function function;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +32,7 @@ class AlreadyHavAnAccount extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            // Navigator.of(context).pushNamed(SignUpView.id);
+            function();
           },
           child: Text(nameButton,
               style: Styles.textStyle16.copyWith(color: colorNameButton)),

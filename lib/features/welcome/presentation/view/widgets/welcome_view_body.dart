@@ -8,6 +8,7 @@ import 'package:food_app/features/welcome/presentation/view/widgets/signIn_with_
 import 'package:food_app/features/welcome/presentation/view/widgets/text_welcome_view.dart';
 
 import '../../../../../core/utils/widgets/dropdown_button_local.dart';
+import '../../../../auth/presentation/view/login_view.dart';
 
 class WelcomeViewBody extends StatelessWidget {
   const WelcomeViewBody({super.key});
@@ -53,6 +54,9 @@ class WelcomeViewBody extends StatelessWidget {
             const ButtonWelcomeView(),
             SizedBox(height: 24.h),
             AlreadyHavAnAccount(
+                function: () {
+                  Navigator.of(context).pushNamed(LoginView.id);
+                },
                 name: "AlreadyHaveAnAccount?".tr(context),
                 nameButton: "SignIn".tr(context),
                 colorName: Colors.white,

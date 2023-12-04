@@ -4,8 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/constant/color_app.dart';
 import '../../../../../core/constant/styles_app.dart';
 
-class BottomSignUp extends StatelessWidget {
-  const BottomSignUp({super.key, required this.function, required this.name});
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key, required this.function, required this.name});
 
   final Function function;
   final String name;

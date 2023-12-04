@@ -13,7 +13,7 @@ class GoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      elevation: 8,
+      elevation: 3,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(27.r)),
       height: 54.h,
       color: Colors.white,

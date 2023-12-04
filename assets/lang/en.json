@@ -1,5 +1,5 @@
 {
-    "the language" : "language",
+    "the language": "language",
     "WelcomeToApp": "Welcome to",
     "WelcomeToAppDescription": "Your favourite foods delivered\nfast at your door.",
     "signInWith": "sign in with",
@@ -18,6 +18,7 @@
     "Please enter an email": "Please enter an email",
     "Please enter a valid email": "Please enter a valid email",
     "Please enter a password": "Please enter a password",
-    "Password must be at least 6 characters long": "Password must be at least 6 characters long"
-    ,"Login":"Login"
+    "Password must be at least 6 characters long": "Password must be at least 6 characters long",
+    "Login": "Login",
+    "Forgot password?":"Forgot password?"
 }
