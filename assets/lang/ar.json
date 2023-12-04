@@ -20,5 +20,8 @@
     "Please enter a password": "الرجاء إدخال كلمة المرور",
     "Password must be at least 6 characters long": "الرقم السري يجب الا يقل عن 6 احرف على الاقل",
     "Login": "تسجيل الدخول",
-    "Forgot password?": "هل نسيت كلمة السر؟"
+    "Forgot password?": "هل نسيت كلمة السر؟",
+    "Resset Password": "هل نسيت كلمة السر؟",
+    "Please enter your email address to request a password reset": "الرجاء إدخال عنوان بريدك الإلكتروني لطلب إعادة تعيين كلمة المرور",
+    "Send new password": "إرسال كلمة المرور الجديدة"
 }

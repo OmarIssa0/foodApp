@@ -20,7 +20,7 @@ class Styles {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
-        contentPadding: EdgeInsets.all(10.r),
+        contentPadding: EdgeInsets.all(14.r),
         hintStyle: TextStyle(
             fontSize: 14.sp,
             color: const Color(0xFFC4C4C4),

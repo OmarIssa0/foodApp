@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/core/constant/color_app.dart';
 import 'package:food_app/core/locale/app_localization.dart';
+import 'package:food_app/features/auth/presentation/view/forgot_password_view.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../../../core/constant/my_validators.dart';
@@ -51,7 +52,7 @@ class _TextFromFiledSignUpState extends State<TextFromFiledLogin> {
     super.dispose();
   }
 
-  Future<void> _signUpFct() async {
+  Future<void> _LoginFct() async {
     final isValid = _formKey.currentState!.validate();
     FocusScope.of(context).unfocus();
     if (isValid) {
@@ -122,18 +123,23 @@ class _TextFromFiledSignUpState extends State<TextFromFiledLogin> {
           SizedBox(height: 32.h),
           Align(
             alignment: Alignment.center,
-            child: Text(
-              "Forgot password?".tr(context),
-              style: TextStyle(
-                  fontSize: 14.sp,
-                  fontWeight: FontWeight.w400,
-                  color: AppColor.kOrange),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed(ForgotPasswordView.id);
+              },
+              child: Text(
+                "Forgot password?".tr(context),
+                style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w400,
+                    color: AppColor.kOrange),
+              ),
             ),
           ),
           SizedBox(height: 32.h),
           CustomButton(
             function: () {
-              _signUpFct();
+              _LoginFct();
             },
             name: "Login".tr(context),
           )

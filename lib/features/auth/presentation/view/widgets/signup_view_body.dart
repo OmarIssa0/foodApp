@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/core/constant/color_app.dart';
+import 'package:food_app/core/constant/image_app.dart';
 import 'package:food_app/core/constant/styles_app.dart';
 import 'package:food_app/core/locale/app_localization.dart';
 import 'package:food_app/features/auth/presentation/view/widgets/text_filed_signup.dart';
@@ -19,7 +20,7 @@ class SignUpViewBody extends StatelessWidget {
       decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.fill,
-          image: AssetImage("assets/images/Sign Up Background.png"),
+          image: AssetImage(AppImage.kBackGroundAuth),
         ),
       ),
       child: Padding(
