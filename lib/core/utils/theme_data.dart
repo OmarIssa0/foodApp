@@ -17,6 +17,16 @@ class Styles {
       //   foregroundColor: Colors.white,
       //   backgroundColor: Colors.white,
       // ),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: Colors.white,
+        selectedItemColor: AppColor.kDark,
+        elevation: 10,
+        unselectedIconTheme: IconThemeData(color: Color(0xffD3D1D8)),
+        showSelectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        enableFeedback: false,
+        landscapeLayout: BottomNavigationBarLandscapeLayout.spread,
+      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,

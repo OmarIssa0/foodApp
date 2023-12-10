@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_app/core/constant/color_app.dart';
 import 'package:food_app/core/constant/image_app.dart';
+import 'package:food_app/root_view.dart';
 
-import '../../../features/welcome/presentation/view/welcome_view.dart';
 
 class SplashView extends StatelessWidget {
   static String id = '/SplashView';
@@ -19,7 +19,7 @@ class SplashView extends StatelessWidget {
       splash: SvgPicture.asset(
         AppImage.kLogoApp,
       ),
-      nextScreen: const WelcomeView(),
+      nextScreen: const RootView(),
     );
   }
 }

@@ -22,48 +22,46 @@ class WelcomeViewBody extends StatelessWidget {
           image: AssetImage(AppImage.kWelcomeView),
         ),
       ),
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: 45.h),
-            Padding(
-              padding: EdgeInsetsDirectional.only(start: 25.r),
-              child: Row(
-                children: [
-                  Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.white),
-                      child: const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: DropdownButtonLocal(),
-                      )),
-                ],
-              ),
+      child: Column(
+        children: [
+          SizedBox(height: 45.h),
+          Padding(
+            padding: EdgeInsetsDirectional.only(start: 25.r),
+            child: Row(
+              children: [
+                Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.white),
+                    child: const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      child: DropdownButtonLocal(),
+                    )),
+              ],
             ),
-            // const ButtonSkipWelcomeView(),
-            SizedBox(height: 100.h),
-            const TextWelcomeView(),
-            SizedBox(height: 145.h),
-            // const Spacer(flex: 1),
-            SignInWithWidgets(
-              color: Colors.white.withOpacity(0.5),
-              colorFont: Colors.white,
-              fontSize: 16.sp,
-            ),
-            const ButtonWelcomeView(),
-            SizedBox(height: 24.h),
-            AlreadyHavAnAccount(
-                function: () {
-                  Navigator.of(context).pushNamed(LoginView.id);
-                },
-                name: "AlreadyHaveAnAccount?".tr(context),
-                nameButton: "SignIn".tr(context),
-                colorName: Colors.white,
-                colorNameButton: Colors.white),
-            SizedBox(height: 50.h),
-          ],
-        ),
+          ),
+          // const ButtonSkipWelcomeView(),
+          SizedBox(height: 100.h),
+          const TextWelcomeView(),
+          // SizedBox(height: 145.h),
+          const Spacer(flex: 1),
+          SignInWithWidgets(
+            color: Colors.white.withOpacity(0.5),
+            colorFont: Colors.white,
+            fontSize: 16.sp,
+          ),
+          const ButtonWelcomeView(),
+          SizedBox(height: 24.h),
+          AlreadyHavAnAccount(
+              function: () {
+                Navigator.of(context).pushNamed(LoginView.id);
+              },
+              name: "AlreadyHaveAnAccount?".tr(context),
+              nameButton: "SignIn".tr(context),
+              colorName: Colors.white,
+              colorNameButton: Colors.white),
+          SizedBox(height: 50.h),
+        ],
       ),
     );
   }

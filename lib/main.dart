@@ -9,7 +9,12 @@ import 'package:food_app/core/utils/widgets/splash_view.dart';
 import 'package:food_app/features/auth/presentation/view/forgot_password_view.dart';
 import 'package:food_app/features/auth/presentation/view/login_view.dart';
 import 'package:food_app/features/auth/presentation/view/signup_view.dart';
+import 'package:food_app/features/cart/presentation/view/cart_view.dart';
+import 'package:food_app/features/home/presentation/view/home_view.dart';
+import 'package:food_app/features/profile/presentation/view/profile_view.dart';
+import 'package:food_app/features/search/presentation/view/search_view.dart';
 import 'package:food_app/features/welcome/presentation/view/welcome_view.dart';
+import 'package:food_app/root_view.dart';
 
 import 'core/locale/app_localization.dart';
 // import 'package:flutter_l';
@@ -64,6 +69,11 @@ class MyApp extends StatelessWidget {
                       LoginView.id: (context) => const LoginView(),
                       ForgotPasswordView.id: (context) =>
                           const ForgotPasswordView(),
+                      RootView.id: (context) => const RootView(),
+                      HomeView.id: (context) => const HomeView(),
+                      SearchView.id: (context) => const SearchView(),
+                      CartView.id: (context) => const CartView(),
+                      ProfileView.id: (context) => const ProfileView()
                     },
                   ),
                 );

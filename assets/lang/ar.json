@@ -23,5 +23,14 @@
     "Forgot password?": "هل نسيت كلمة السر؟",
     "Resset Password": "هل نسيت كلمة السر؟",
     "Please enter your email address to request a password reset": "الرجاء إدخال عنوان بريدك الإلكتروني لطلب إعادة تعيين كلمة المرور",
-    "Send new password": "إرسال كلمة المرور الجديدة"
+    "Send new password": "إرسال كلمة المرور الجديدة",
+    "What would you like to order": "ماذا ترغب في طلبه؟",
+    "Asian": "الآسيوية",
+    "Burger": "برجر",
+    "Donat": "دونات",
+    "Mexican": "مكسيكي",
+    "Pizza": "البيتزا",
+    "Meat": "لحمة",
+    "Ice cream": "بوظة",
+    "Cheese": "جبنة"
 }

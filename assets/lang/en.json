@@ -23,5 +23,14 @@
     "Forgot password?": "Forgot password?",
     "Resset Password": "Reset Password",
     "Please enter your email address to request a password reset": "Please enter your email address to\nrequest a password reset",
-    "Send new password": "Send new password"
+    "Send new password": "Send new password",
+    "What would you like to order": "What would you like\nto order",
+    "Asian": "Asian",
+    "Burger": "Burger",
+    "Donat": "Donat",
+    "Mexican": "Mexican",
+    "Pizza": "Pizza",
+    "Meat": "Meat",
+    "Ice cream": "Ice",
+    "Cheese": "Cheese"
 }
